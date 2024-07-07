@@ -48,7 +48,7 @@
     </script>
     <!-- End of Google Analytics -->
   </head>
-  
+
   <body>
     <!-- Hero Section -->
     <div id="hero">
@@ -76,7 +76,7 @@
           <div class="about-wrapper__image">
             <img
               class="img-fluid"
-              src="./imagens/fotoperfil.jpg"
+              src="./images/fotoperfil.jpg"
               alt="Profile Image"
               width="450"
               height="350"
@@ -99,7 +99,7 @@
               seguir minha paixão pela programação.
             </p>
             <span class="about-wrapper__cta">
-              <a href="#" class="cta-btn cta-btn--resume">Ver Curriculo</a>
+              <a href="./view-pdf.html" class="cta-btn cta-btn--resume" target="_blank">Ver Curriculo</a>
             </span>
           </div>
         </div>
@@ -138,7 +138,7 @@
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./imagens/projeto1.jpg"
+                    src="./images/projeto1.jpg"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
@@ -245,5 +245,13 @@
     </script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
+
+    <script>
+      document.querySelector('.cta-btn--resume').addEventListener('click', function(event) {
+        event.preventDefault();
+        window.open(this.href, '_blank');
+      });
+    </script>    
+    
   </body>
 </html>
