@@ -120,6 +120,18 @@ ul {
     color: var(--primary-color);
 }
 
+.mobile-menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-main);
+    transition: var(--transition);
+}
+
+.mobile-menu-btn:hover {
+    color: var(--primary-color);
+}
+
 .nav-cta {
     background: var(--gradient-primary);
     padding: 8px 24px;
@@ -164,6 +176,29 @@ ul {
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1px;
+    cursor: pointer;
+    transition: var(--transition);
+    animation: pulseBadge 3s infinite;
+}
+
+.badge:hover {
+    background: rgba(59, 130, 246, 0.25);
+    border-color: var(--primary-color);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+    color: #fff;
+}
+
+@keyframes pulseBadge {
+    0% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    }
 }
 
 .hero-title {
@@ -465,14 +500,15 @@ ul {
 .project-img-wrapper {
     position: relative;
     width: 100%;
-    height: 250px;
+    /* Let the height be determined naturally by the image aspect ratio */
     overflow: hidden;
 }
 
 .project-img-wrapper img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
+    object-fit: contain; /* ensures no cropping */
     transition: transform 0.5s ease;
 }
 
@@ -637,14 +673,41 @@ footer p {
 
 /* ================= Responsive ================= */
 @media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
     .nav-links {
-        display: none; /* simple hidden nav for mobile */
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(11, 15, 25, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 20px 0;
+        border-bottom: var(--glass-border);
+        gap: 20px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.4s ease-in-out;
+    }
+
+    .nav-links.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
     
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
     .hero-buttons {
         flex-direction: column;
         width: 100%;
-        padding: 0 20px;
     }
     
     .btn {
@@ -652,6 +715,11 @@ footer p {
         justify-content: center;
     }
     
+    .btn-large {
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+
     .hero-features {
         flex-direction: column;
         align-items: center;
@@ -659,7 +727,15 @@ footer p {
     
     .feature {
         width: 100%;
-        max-width: 350px;
+        max-width: 100%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about {
+        padding: 60px 0;
     }
     
     .about-card {
@@ -677,8 +753,25 @@ footer p {
         display: block;
     }
     
+    .portfolio {
+        padding: 60px 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-section {
+        padding: 60px 0;
+    }
+
+    .cta-container h2 {
+        font-size: 2rem;
+    }
+
     .footer-container {
         flex-direction: column;
         text-align: center;
+        gap: 15px;
     }
 }
