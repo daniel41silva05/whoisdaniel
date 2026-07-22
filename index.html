@@ -1,294 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Criação de websites premium para negócios locais. Tenha uma página atrativa por um custo único de 50€.">
+    <title>Daniel Silva | Websites para Negócios Locais</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Daniel Silva<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contactos" class="nav-cta">Contactar</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <title>Daniel Silva | Engenheiro Informático</title>
-
-    <!-- ~cor azul claro -->
-    <meta name="theme-color" content="#36d1dc" />
-
-    <!-- link tags -->
-    <link rel="preload" as="style" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-
-    <!-- FontAwesome Icons link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script defer src="./javascript/scrollreveal.min.js"></script>
-    <script
-      defer
-      type="text/javascript"
-      src="./javascript/scrollveal.js"
-    ></script>
-
-    <!-- Remove Google Analytics once you have your portfolio website set-up -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag("js", new Date())
-
-      gtag("config", "UA-122228201-4")
-    </script>
-    <!-- End of Google Analytics -->
-  </head>
-
-  <body>
     <!-- Hero Section -->
-    <div id="hero">
-      <section class="container">
-        <h1 class="hero-title">
-          Olá, o meu nome é <span class="text-color-main name">Daniel Silva</span>
-          <br />
-          e sou um engenheiro Informático.
-        </h1>
-        <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#contact">Entrar em contacto</a>
-        </p>
-      </section>
-      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-        <div class="scroll-down"></div
-      ></a>
-    </div>
-    <!-- /END Hero Section -->
+    <header class="hero" id="inicio">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Websites para Negócios Locais</span>
+                <h1 class="hero-title">Eleve o seu negócio com uma <span>presença online</span> de excelência.</h1>
+                <p class="hero-subtitle">Atraia mais clientes com um website premium, desenhado à medida para o seu estabelecimento.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Ver Portfólio</a>
+                    <a href="https://wa.me/351934091814" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp</a>
+                </div>
+            </div>
+            
+            <div class="hero-features">
+                <div class="feature">
+                    <div class="feature-icon"><i class="fa-solid fa-euro-sign"></i></div>
+                    <div class="feature-text">
+                        <h3>Custo Único</h3>
+                        <p>Sem mensalidades extra.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="feature-text">
+                        <h3>Risco Zero</h3>
+                        <p>Pagamento só após aprovação.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <div class="feature-text">
+                        <h3>Entrega Rápida</h3>
+                        <p>O seu site no ar em poucos dias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </header>
 
     <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">Sobre Mim</h2>
-        <div class="row about-wrapper">
-          <div class="about-wrapper__image">
-            <img
-              class="img-fluid"
-              src="./images/fotoperfil.jpg"
-              alt="Profile Image"
-              width="450"
-              height="350"
-            />
-          </div>
-          <div class="about-wrapper__info">
-            <p class="about-wrapper__info-text">
-              Sou estudante de Engenharia de Software no ISEP, com experiência prática em desenvolvimento backend, modelação de dados e otimização de processos. Tenho paixão por transformar problemas complexos em soluções de software eficientes e fáceis de manter, aplicando princípios de arquitetura limpa, design sólido e metodologias ágeis.
-              Possuo fortes competências em Java e C#, bases de dados SQL (PostgreSQL, Oracle, H2) e frameworks backend (Spring Boot, .NET), além de experiência na criação de sistemas completos desde o zero.
-            </p>
-            <p class="about-wrapper__info-text">
-              Para além das competências técnicas, adquiri valiosas lições ao longo de 7 anos de futebol competitivo, desenvolvendo trabalho em equipa, disciplina e foco.
-            </p>
-            <p class="about-wrapper__info-text">
-              Procuro oportunidades em empresas onde possa expandir as minhas capacidades técnicas e continuar a seguir a minha paixão pela programação.
-            </p>
-            <span class="about-wrapper__cta">
-              <a href="./view-pdf.html" class="cta-btn cta-btn--resume" target="_blank">Ver Curriculo</a>
-            </span>
-          </div>
+    <section class="about" id="sobre">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="about-card">
+                    <div class="about-content">
+                        <img src="./images/eu.jpeg" alt="Daniel Silva" class="about-image">
+                        <div class="about-text-inner">
+                            <p>Olá! Sou o <strong>Daniel Silva</strong>, um apaixonado por tecnologia e estudante de Engenharia Informática focado em ajudar negócios locais a prosperarem na era digital.</p>
+                            <p>A minha missão é simples: criar presenças online de excelência e alto impacto para o seu comércio, sem as complicações e os preços exorbitantes das grandes agências.</p>
+                            
+                            <p>Mais abaixo poderá explorar o meu portfólio. Se gostar do que vê, estou à distância de uma mensagem para revolucionar o seu negócio!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-    <!-- /END About Section -->
 
-    <!--Projects Section-->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projetos</h2>
-
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Cafeteria Management</h3>
-              <p class="project-wrapper__text-info">
-              Este projeto visa desenvolver um sistema que compreende um conjunto de serviços
-              relacionados à utilização e operação de uma rede de cantinas.
-              Segue o modelo Domain-Driven Design (DDD), garantindo uma clara separação entre camadas e facilitando a manutenção e evolução do projeto.
-              Foi implementado em Java, e também se recorreu a frameworks para suporte à persistência, injeção de dependências e testes.
-              A persistência usada foi JPA e InMemory e a aplicação consistente na camada backoffice e camada bootstrap.  
-              O sistema permite a gestão de utilizadores, produtos, menus, pedidos e faturação,
-              assegurando consistência nos dados e regras de negócio bem definidas.  
-              Inclui documentação completa, casos de uso detalhados.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/daniel41silva05/Cafeteria_Management_ISEP"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Ver Código Fonte</a
-                >
-              </div>
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="portfolio-header">
+                <h2 class="section-title">O Meu Portfólio</h2>
+                <p class="section-subtitle">Projetos reais desenvolvidos para diferentes tipos de negócios locais.</p>
             </div>
 
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./images/projeto2.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+            <!-- Tatuadores -->
+            <div class="portfolio-category">
+                <div class="category-header">
+                    <h3><i class="fa-solid fa-pen-nib"></i> Tatuadores</h3>
                 </div>
-              </a>
-            </div>
-          </article>
-
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">ClinicPro</h3>
-              <p class="project-wrapper__text-info">
-                O ClinicPro é um sistema de gestão de clínicas desenvolvido em C# com .NET, Entity Framework e baseado em Domain-Driven Design (DDD), apoiado por diagramas C4 para todas as camadas da arquitetura.  
-                O projeto inclui endpoints RESTful para operações CRUD completas de pacientes, médicos, consultas e especialidades.  
-                Implementa lógica de agendamento de consultas com deteção de conflitos e gestão de registos clínicos, garantindo integridade dos dados e consistência das regras de negócio.  
-                A aplicação é escalável e de fácil manutenção, com API documentada e suporte a workflows clínicos estruturados.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/daniel41silva05/ClinicPro"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Ver Código Fonte</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./images/clinicpro.png"
-                    class="img-fluid"
-                    alt="ClinicPro Project Image"
-                    width="1366"
-                    height="767"
-                  />
+                <div class="projects-grid">
+                    <a href="https://ls-work-tattoo.netlify.app" target="_blank" class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./images/ls work.png" alt="Tattoo Studio">
+                            <div class="project-overlay">
+                                <span>Ver Website <i class="fa-solid fa-external-link-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>LS Work Tattoo</h4>
+                            <p>ls-work-tattoo.netlify.app</p>
+                        </div>
+                    </a>
+                    <a href="https://rima-vilko-tattoo.netlify.app" target="_blank" class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./images/rima vilko.png" alt="Tattoo Studio">
+                            <div class="project-overlay">
+                                <span>Ver Website <i class="fa-solid fa-external-link-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Rima Vilko Tattoo</h4>
+                            <p>rima-vilko-tattoo.netlify.app</p>
+                        </div>
+                    </a>
                 </div>
-              </a>
-            </div>
-          </article>
-
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Order and Production Management</h3>
-              <p class="project-wrapper__text-info">
-                O Order and Production Management foi desenvolvido como um desafio pessoal com
-                o objetivo de programar com base de dados sem dependência de frameworks,
-                destacando a atenção ao detalhe e ao rigor na implementação.
-                Utiliza Java e SQL puro, seguindo uma arquitetura MVC bem estruturada
-                para garantir organização e separação de responsabilidades. O sistema
-                permite gestão de clientes, encomendas, produtos, estações de trabalho,
-                fornecedores e árvores de produção, além de incluir um simulador de cenários de produção.
-                Conta com cobertura de testes unitários e documentação completa,
-                cobrindo desde requisitos até implementação.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/daniel41silva05/Production_Control_Industrial_ISEP"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Ver Código Fonte</a
-                >
-              </div>
             </div>
 
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./images/projeto1.jpeg"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+            <!-- Cabeleireiros -->
+            <div class="portfolio-category">
+                <div class="category-header">
+                    <h3><i class="fa-solid fa-scissors"></i> Cabeleireiros</h3>
                 </div>
-              </a>
+                <div class="projects-grid">
+                    <a href="https://avenuestudio.pt" target="_blank" class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./images/avenue studio.png" alt="Cabeleireiro">
+                            <div class="project-overlay">
+                                <span>Ver Website <i class="fa-solid fa-external-link-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Avenue Studio</h4>
+                            <p>avenuestudio.pt</p>
+                        </div>
+                    </a>
+                    <a href="https://catia-cruz-cabeleireira.netlify.app" target="_blank" class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./images/catia cruz.png" alt="Cabeleireiro">
+                            <div class="project-overlay">
+                                <span>Ver Website <i class="fa-solid fa-external-link-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Cátia Cruz Cabeleireira</h4>
+                            <p>catia-cruz-cabeleireira.netlify.app</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-          </article>
-          <!-- /END Project -->       
+
+            <!-- Restaurantes / Confeitarias -->
+            <div class="portfolio-category">
+                <div class="category-header">
+                    <h3><i class="fa-solid fa-utensils"></i> Restaurantes & Confeitarias</h3>
+                </div>
+                <div class="projects-grid">
+                    <a href="https://bills-restrobar.netlify.app" target="_blank" class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./images/bills.png" alt="Restaurante">
+                            <div class="project-overlay">
+                                <span>Ver Website <i class="fa-solid fa-external-link-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Bill's Restrobar</h4>
+                            <p>bills-restrobar.netlify.app</p>
+                        </div>
+                    </a>
+                    <a href="https://maison-do-couto.netlify.app" target="_blank" class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./images/maison.png" alt="Restaurante">
+                            <div class="project-overlay">
+                                <span>Ver Website <i class="fa-solid fa-external-link-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Maison do Couto</h4>
+                            <p>maison-do-couto.netlify.app</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-    <!-- End Projects Section -->
 
-<!-- Contact Section -->
-<section id="contact">
-  <div class="container">
-    <h2 class="section-title">Contactos</h2>
-    <div class="contact-wrapper">
-      <p class="contact-wrapper__text">danielandresilva41@gmail.com</p>
-      <a href="https://www.gmail.com" class="cta-btn cta-btn--resume" target="_blank">Entrar em contacto</a>
-    </div>
-  </div>
-</section>
-<!-- END Contact Section -->
+    <!-- Call To Action -->
+    <section class="cta-section" id="contactos">
+        <div class="container cta-container">
+            <h2>Pronto para ter o seu Website?</h2>
+            <p>Entre em contacto comigo pelo WhatsApp. Terei todo o gosto em ajudar o seu negócio a crescer.</p>
+            <a href="https://wa.me/351934091814" target="_blank" class="btn btn-primary btn-large">
+                <i class="fa-brands fa-whatsapp"></i> Falar Agora
+            </a>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">Daniel Silva<span>.</span></div>
+            <p>&copy; <span id="year"></span> Daniel Silva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
-<!-- Footer Section -->
-<footer class="footer">
-  <div class="container">
-    <a href="#" class="back-to-top" aria-label="go back to top">
-      <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-    </a>    
-    <div class="social-links">
-      <a
-        href="https://www.instagram.com/danielsilva___10/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="instagram"
-      >
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/danielsilva41/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="linkedin"
-      >
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a
-        href="https://github.com/daniel41silva05"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="github"
-      >
-        <i class="fa-brands fa-github"></i>
-      </a>
-    </div>
-    <hr />
-  </div>
-</footer>
-<!-- END Footer Section -->
+    <!-- Floating Back to Top Button -->
+    <a href="#" class="floating-top" aria-label="Voltar ao topo" id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear()
-    </script>
-    <script src="./javascript/vanilla-tilt.min.js"></script>
-    <script type="text/javascript" src="./javascript/valtilt.js"></script>
-
-    <script>
-      document.querySelector('.cta-btn--resume').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.open(this.href, '_blank');
-      });
-    </script>    
-    
-  </body>
+    <!-- Scripts -->
+    <script src="./javascript/main.js"></script>
+</body>
 </html>
