@@ -28,8 +28,8 @@
         <div class="container nav-container">
             <a href="#" class="logo">Daniel Silva<span>.</span></a>
             <ul class="nav-links">
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contactos" class="nav-cta">Contactar</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contactos" class="nav-cta">Pedir Orçamento</a></li>
             </ul>
             <div class="mobile-menu-btn">
                 <i class="fa-solid fa-bars"></i>
@@ -47,9 +47,8 @@
                     estabelecimento.</p>
 
                 <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">Ver Portfólio</a>
-                    <a href="https://wa.me/351934091814" target="_blank" class="btn btn-secondary"><i
-                            class="fa-brands fa-whatsapp"></i> Falar no WhatsApp</a>
+                    <a href="#servicos" class="btn btn-primary">Ver Serviços</a>
+                    <a href="#contactos" class="btn btn-secondary">Pedir Orçamento</a>
                 </div>
             </div>
 
@@ -81,12 +80,12 @@
         <div class="glow glow-2"></div>
     </header>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
+    <!-- Services Section -->
+    <section class="portfolio" id="servicos">
         <div class="container">
             <div class="portfolio-header">
-                <h2 class="section-title">O Meu Portfólio</h2>
-                <p class="section-subtitle">Projetos reais desenvolvidos para diferentes tipos de negócios locais.</p>
+                <h2 class="section-title">Os Meus Serviços</h2>
+                <p class="section-subtitle">Soluções digitais premium desenhadas à medida das necessidades do seu<br>negócio.</p>
                 <div class="social-proof-centered">
                     <p><strong>Mais de 15</strong> clientes satisfeitos</p>
                     <div class="stars">
@@ -99,12 +98,40 @@
                 </div>
             </div>
 
-            <!-- Comida -->
+            <div class="hero-features" style="margin-bottom: 80px;">
+                <div class="feature fade-in">
+                    <div class="feature-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div class="feature-text">
+                        <h3>Site de Apresentação</h3>
+                        <p>O seu portfólio digital.</p>
+                    </div>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                    <div class="feature-text">
+                        <h3>Sistema de Reserva</h3>
+                        <p>Gestão de agendamentos.</p>
+                    </div>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="feature-text">
+                        <h3>Loja Online</h3>
+                        <p>Vendas 24/7 integradas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Site de Apresentação -->
             <div class="portfolio-category">
                 <div class="category-header">
-                    <h3><i class="fa-solid fa-utensils"></i> Comida</h3>
+                    <h3><i class="fa-solid fa-laptop-code"></i> Site de Apresentação</h3>
                 </div>
-                <div class="projects-grid">
+                <p class="category-desc">Websites institucionais e atrativos para apresentar o seu negócio ao mundo. O seu portfólio digital perfeito.</p>
+                
+                <!-- Comida -->
+                <h4 style="margin-bottom: 20px; color: var(--text-main); font-size: 1.2rem;"><i class="fa-solid fa-utensils"></i> Comida</h4>
+                <div class="projects-grid" style="margin-bottom: 40px;">
                     <a href="https://bills-restrobar.netlify.app" target="_blank" class="project-card">
                         <div class="project-img-wrapper">
                             <img src="./images/bills.png" alt="Restaurante">
@@ -130,14 +157,10 @@
                         </div>
                     </a>
                 </div>
-            </div>
 
-            <!-- Tatuadores -->
-            <div class="portfolio-category">
-                <div class="category-header">
-                    <h3><i class="fa-solid fa-pen-nib"></i> Tatuadores</h3>
-                </div>
-                <div class="projects-grid">
+                <!-- Tatuadores -->
+                <h4 style="margin-bottom: 20px; color: var(--text-main); font-size: 1.2rem;"><i class="fa-solid fa-pen-nib"></i> Tatuadores</h4>
+                <div class="projects-grid" style="margin-bottom: 40px;">
                     <a href="https://pintart-tattoostudio.netlify.app" target="_blank" class="project-card">
                         <div class="project-img-wrapper">
                             <img src="./images/pintart.png" alt="Tattoo Studio">
@@ -163,13 +186,9 @@
                         </div>
                     </a>
                 </div>
-            </div>
 
-            <!-- Cabeleireiros -->
-            <div class="portfolio-category">
-                <div class="category-header">
-                    <h3><i class="fa-solid fa-scissors"></i> Cabeleireiros</h3>
-                </div>
+                <!-- Cabeleireiros -->
+                <h4 style="margin-bottom: 20px; color: var(--text-main); font-size: 1.2rem;"><i class="fa-solid fa-scissors"></i> Cabeleireiros</h4>
                 <div class="projects-grid">
                     <a href="https://avenuestudio.pt" target="_blank" class="project-card">
                         <div class="project-img-wrapper">
@@ -197,17 +216,134 @@
                     </a>
                 </div>
             </div>
+
+            <!-- Plataforma de Reservas -->
+            <div class="portfolio-category">
+                <div class="category-header">
+                    <h3><i class="fa-regular fa-calendar-check"></i> Plataforma de Reservas</h3>
+                </div>
+                <div class="category-desc" style="margin-bottom: 30px;">
+                    <p style="margin-bottom: 10px;">Sistema de reserva completo para gerir o seu negócio. Tudo o que precisa num só lugar:</p>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>Gerenciar preços por período</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>Controlo de calendário (bloqueio de datas e horários)</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>Gestão integrada de staff e espaços</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>Pesquisa inteligente e filtros avançados</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>Aprovação de pedidos com um clique</li>
+                    </ul>
+                </div>
+                <div class="projects-grid">
+                    <a href="https://daniel41silva05.github.io/reservas/" target="_blank" class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./images/reservas.png" alt="Plataforma de Reservas">
+                            <div class="project-overlay">
+                                <span>Ver Website <i class="fa-solid fa-external-link-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Sistema de Reservas</h4>
+                            <p>daniel41silva05.github.io/reservas</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Loja Online -->
+            <div class="portfolio-category">
+                <div class="category-header">
+                    <h3><i class="fa-solid fa-cart-shopping"></i> Loja Online</h3>
+                </div>
+                <div class="category-desc" style="margin-bottom: 30px;">
+                    <p style="margin-bottom: 10px;">Plataformas de e-commerce otimizadas para converter. Expanda as suas vendas:</p>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>Gestão inteligente de categorias</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>Pagamentos seguros</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>Carrinho de compras</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>Painel de estatísticas e faturação integrada</li>
+                    </ul>
+                </div>
+                <div class="projects-grid">
+                    <a href="https://stripe.com/en-pt?utm_campaign=EMEA_PT_en_Google_Search_Brand_Stripe_EXA-23373237280&utm_medium=cpc&utm_source=google&utm_content=788648359352&utm_term=stripe&utm_matchtype=e&utm_adposition=&utm_device=c&gad_source=1&gad_campaignid=23373237280&gbraid=0AAAAADKNRO7fdhw7PjgHWdkzCVv_pfii4&gclid=CjwKCAjwkaXUBhASEiwAZI3ds2muka4gP-zkHQ0X44ggEW0q2jmlL5YlbKzkBAe8EeTW2GjhajJqdhoCgxcQAvD_BwE" target="_blank" class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./images/loja online.png" alt="Loja Online">
+                            <div class="project-overlay">
+                                <span>Ver Loja <i class="fa-solid fa-external-link-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Loja E-commerce</h4>
+                            <p>Pagamentos integrados via Stripe.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Call To Action -->
+    <!-- Contact / CTA Section -->
     <section class="cta-section" id="contactos">
         <div class="container cta-container">
-            <h2>Pronto para ter o seu Website?</h2>
-            <p>Entre em contacto comigo pelo WhatsApp. Terei todo o gosto em ajudar o seu negócio a crescer.</p>
-            <a href="https://wa.me/351934091814" target="_blank" class="btn btn-primary btn-large">
-                <i class="fa-brands fa-whatsapp"></i> Falar Agora
-            </a>
+            <h2>Peça já o seu orçamento<br class="desktop-br"> preenchendo o formulário abaixo!</h2>
+            <p style="margin-bottom: 40px; font-weight: 500; font-size: 1.1rem; color: var(--primary-color);">
+                <i class="fa-solid fa-bolt"></i> Venha fazer um site, é mais barato do que imagina!
+            </p>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="businessName">Nome do Negócio *</label>
+                    <input type="text" id="businessName" name="businessName" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="socialMedia">Rede Social (Instagram, Facebook, etc)</label>
+                        <input type="text" id="socialMedia" name="socialMedia">
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Nº de Telemóvel *</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Tipo de Serviços Pretendidos *</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Site de Apresentação">
+                            <span class="custom-checkbox"></span>
+                            Site de Apresentação
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Plataforma de Reservas">
+                            <span class="custom-checkbox"></span>
+                            Plataforma de Reservas
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Loja Online">
+                            <span class="custom-checkbox"></span>
+                            Loja Online
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Outros">
+                            <span class="custom-checkbox"></span>
+                            Outros
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="observations">Observações adicionais</label>
+                    <textarea id="observations" name="observations" rows="4" placeholder="Escreva aqui detalhes adicionais sobre o que pretende..."></textarea>
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <button type="submit" class="btn btn-primary form-submit-btn">
+                        Pedir Orçamento no WhatsApp
+                    </button>
+                </div>
+            </form>
+            
+            <p class="direct-contact-text fade-in">Ou se preferir, <a href="https://wa.me/351934091814" target="_blank" class="direct-link">fale comigo diretamente aqui</a>.</p>
         </div>
     </section>
 

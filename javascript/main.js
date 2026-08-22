@@ -76,3 +76,48 @@ const fadeObserver = new IntersectionObserver((entries) => {
 fadeElements.forEach(el => {
     fadeObserver.observe(el);
 });
+
+// Contact Form WhatsApp Logic
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Gather form data
+        const businessName = document.getElementById('businessName').value.trim();
+        const socialMedia = document.getElementById('socialMedia').value.trim();
+        const phoneNumber = document.getElementById('phoneNumber').value.trim();
+        const observations = document.getElementById('observations').value.trim();
+
+        // Gather checked services
+        const servicesCheckboxes = document.querySelectorAll('input[name="services"]:checked');
+        let selectedServices = [];
+        servicesCheckboxes.forEach((checkbox) => {
+            selectedServices.push(checkbox.value);
+        });
+
+        // Format message
+        let message = `Olá Daniel! Gostaria de pedir um orçamento para o meu negócio.\n\n`;
+        message += `Nome do Negócio: ${businessName}.\n`;
+        if (socialMedia) message += `Rede Social: ${socialMedia}.\n`;
+        message += `Nº de Telemóvel: ${phoneNumber}.\n`;
+        
+        if (selectedServices.length > 0) {
+            message += `Serviços Pretendidos: ${selectedServices.join(', ')}.\n`;
+        } else {
+            message += `Serviços Pretendidos: Não especificado.\n`;
+        }
+
+        if (observations) {
+            message += `\nObservações:\n${observations}.`;
+        }
+
+        // Encode URI and open WhatsApp
+        const whatsappNumber = '351934091814';
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+        
+        window.open(whatsappUrl, '_blank');
+    });
+}
+
