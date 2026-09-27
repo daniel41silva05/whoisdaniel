@@ -582,7 +582,8 @@ ul {
     overflow: hidden;
     border: var(--glass-border);
     transition: var(--transition);
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -662,13 +663,18 @@ ul {
 }
 
 .project-info {
-    padding: 25px;
+    padding: 15px 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .project-info h4 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 
 .project-info p {
